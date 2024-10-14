@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    /* suppress browser defaults and select alt box model */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif, Tahoma;
+    /* set variables for colors */
+    --bg-primary: #D1AEA4;
+    --bg-secondary: #E9D8C5; 
+    --font-color-primary: #121F16;
+    --font-color-secondary: #92140C;
+    --backup-color: #9F4A54;
+}
+
+
+body {
+    height: 100vh;  /*this means span the entire height of screen*/
+    background: var(--bg-primary);
+}
+
+header {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+header .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* this means that items will not wrap to next line if window is minimized */
+}
+
+header .heading .page-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 50px;
+}
+
+header .heading .page-title img {
+    width: 65px;
+    height: 65px;
+}
+
+header .heading .page-title .title-background {
+    size: relative;
+    border-radius: 15px; /* to curve the edges of a box */
+    background: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 15px;
+}
+
+header .heading .page-title .title-background h1 {
+    padding: 11px 30px;
+    size: absolute;
+    color: var(--font-color-primary);
+    font-size: 30px;
+    font-weight: 650;
+}
+
+header .heading nav {
+    size: relative;
+    margin-right: 15px;
+}
+
+header .heading nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-secondary);
+    margin-right: 30px;
+    size: absolute;
+    padding: 18px 31px;
+    border-radius: 15px; /* to curve the edges of a box */
+}
+
+
+header .heading nav ul li {
+    display: flex;
+    align-items: center;
+    margin-right: 65px
+}
+
+header .heading nav ul li .fun-facts {
+    margin-right: -65px;
+}
+
+header .heading nav ul li a {
+    font-size: 20px;
+    font-weight: 620;
+    text-decoration: none;
+    color: var(--font-color-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header .heading nav ul li:hover a { /* to force color and text changes through cursor hover */
+    color: var(--font-color-primary);
+    text-decoration: underline;
+}
+
+header .subheading {
+    margin-top: 10px;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    border-radius: 15px; /* to curve the edges of a box */
+    background: var(--bg-secondary); 
+}
+
+header .subheading * {
+    padding: 18px 31px;
+    color: var(--font-color-secondary);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+header .subheading :nth-child(2) {
+    color: var(--font-color-primary);
+}
+
+main {
+    padding: 50px 50px 30px 50px;
+    margin-top: 15px;
+    background: var(--bg-secondary);
+    color: var(--font-color-primary);
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+main .objective-section {
+    display: flex;
+}
+
+main .objective-section :nth-child(1) {
+    font-weight: 600;
+    margin-right: 13px;
+    text-decoration: underline;
+    color: var(--backup-color);
+}
+
+main .professional-experience-section .title {
+    margin-top: 15px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--backup-color);
+    margin-bottom: -5px;
+}
+
+main .professional-experience-section .job {
+    margin-top: 20px;
+    font-weight: 680;
+}
+
+main .professional-experience-section ul {
+    margin-top: 3px;
+}
+
+main .educational-experiences-section {
+    margin-top: 15px;
+}
+
+main .educational-experiences-section p {
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--backup-color);
+}
+
+main .educational-experiences-section table {
+    margin-top: 15px;
+}
+
+main .educational-experiences-section table th {
+    padding: 7px 0px;
+}
+
+main .educational-experiences-section table td {
+    padding: 3px 10px;
+}
+
+main .extracurriculars-hobbies-section {
+    margin-top: 15px;
+}
+
+main .extracurriculars-hobbies-section :first-child {
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--backup-color);
+}
+
+main .extracurriculars-hobbies-section :last-child {
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 5px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+}
+
+footer div {
+    size: relative;
+    background: var(--bg-secondary);
+    border-radius: 15px; /* to curve the edges of a box */
+}
+
+footer div p {
+    size: absolute;
+    padding: 18px 31px;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40%;
+    list-style: none;
+    size: relative;
+}
+
+footer ul li {
+    background: var(--bg-secondary);
+    size: absolute;
+    padding: 15px 30px;
+    border-radius: 15px; /* to curve the edges of a box */
+}
+
+
+footer ul li a {
+    font-weight: 620;
+    color: var(--font-color-secondary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer ul li:hover a { /* to force color and text changes through cursor hover */
+    color: var(--font-color-primary);
+    text-decoration: underline;
+}

@@ -5,21 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ammar Minhas - Portfolio</title>
     <link rel="shortcut icon" href="./assets/img/mario_m.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index-stylesheet.css" />
 </head>
 
 <body>
 
     <!-- Page Header -->
     <header class="page-header">
-        <!-- Heading -->
-        <h1>Ammar Minhas - Portfolio</h1>
+
+        <div class="page-title">
+            <!-- Logo -->
+            <img src="./assets/img/mario_m.png" width="10%" height="25%" alt="Logo">
+
+            <!-- Heading -->
+             <div class="title-background">
+                <h1>Ammar Minhas - Portfolio</h1>
+             </div>
+        </div>
 
         <!-- Navigation bar -->
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="./html/resume.html">Resume</a></li>
-                <li><a href="./html/fun-facts.html">Fun Facts About Me</a></li>
+                <li><a class="fun-facts" href="./html/fun-facts.html">Fun Facts About Me</a></li>
             </ul>
         </nav>
     </header>
@@ -28,31 +37,37 @@
 
     <!-- Main section of page -->
     <main>
-        <!-- My picture and quote section -->
-        <section class="picture-quote-section" align="center">
-            <img src="./assets/img/my_pic.JPG" width="30%" height="55%" alt="Image of Ammar Minhas">
-            <p>The best is yet to be. —Robert Browning</p>
+
+        <!-- intro section -->
+        <section class="intro-section">
+            <p class="about-me">ABOUT ME</p>
+            <p class="para">Hi! My name is Ammar Minhas and I am a senior at Oakland University studying Computer Science. I will be graduating in April 2025. I have been a part of multiple projects that have involved programming languages including but not limited to Python, Java, SQL, etc., including one project involving agile scrum process. I have held multiple leadership and communication skilled jobs on campus at Oakland University as well. I am eager to use my skills, explore the digital world and solve real-time problems as a software engineer or data scientist. </p>
+            <p class="para">You can learn more about me by checking out my <a href="./html/resume.html">resume</a> and <a href="./html/fun-facts.html">fun facts about me.</a> </p>
+
+            <!-- Progress to Degree: Progress Bar -->
+            <div class="progress-bar">
+                <span>Progress to Degree: </span>
+                <progress value="115" max="128"></progress>
+            </div>
         </section>
 
         <br>
 
-        <!-- intro section -->
-        <section class="intro-section">
-            <p>Hi! My name is Ammar Minhas and I am a senior at Oakland University studying Computer Science. I will be graduating in April 2025. I have been a part of multiple projects that have involved programming languages including but not limited to Python, Java, SQL, etc., including one project involving agile scrum process. I have held multiple leadership and communication skilled jobs on campus at Oakland University as well. I am eager to use my skills, explore the digital world and solve real-time problems as a software engineer or data scientist. You can learn more about me by checking out my <a href="./html/resume.html">resume</a> and <a href="./html/fun-facts.html">fun facts about me.</a> </p>
-
-            <!-- Progress to Degree: Progress Bar -->
-            <span>Progress to Degree: </span>
-            <progress value="115" max="128"></progress>
+        <!-- My picture and quote section -->
+        <section class="picture-quote-section">
+            <img src="./assets/img/my_pic.JPG" width="30%" height="55%" alt="Image of Ammar Minhas">
+            <p>The best is yet to be. —Robert Browning</p>
         </section>
+
     </main>
 
-    <br><hr>
+    <br>
 
     <!-- Page Footer -->
     <footer class="page-footer">
         <ul>
             <li><a href="mailto:minhas@oakland.edu">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/ammar-minhas/">Linkedln</a></li>
+            <li><a href="https://www.linkedin.com/in/ammar-minhas/" target="_blank">Linkedln</a></li>
         </ul>
     </footer>
 

@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    /* suppress browser defaults and select alt box model */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif, Tahoma;
+    /* set variables for colors */
+    --bg-primary: #D1AEA4;
+    --bg-secondary: #E9D8C5; 
+    --font-color-primary: #121F16;
+    --font-color-secondary: #92140C;
+    --backup-color: #9F4A54;
+}
+
+body {
+    height: 100vh;  /*this means span the entire height of screen*/
+    background: var(--bg-primary);
+}
+
+header {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* this means that items will not wrap to next line if window is minimized */
+}
+
+header .page-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 50px;
+}
+
+header .page-title img {
+    width: 65px;
+    height: 65px;
+}
+
+header .page-title .title-background {
+    size: relative; 
+    border-radius: 15px; /* to curve the edges of a box */
+    background: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 15px;
+}
+
+header .page-title .title-background h1 {
+    padding: 11px 30px;
+    size: absolute;
+    color: var(--font-color-primary);
+    font-size: 30px;
+    font-weight: 650;
+}
+
+header nav {
+    size: relative;
+    margin-right: 15px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-secondary);
+    margin-right: 30px;
+    size: absolute;
+    padding: 18px 31px;
+    border-radius: 15px; /* to curve the edges of a box */
+}
+
+
+header nav ul li {
+    display: flex;
+    align-items: center;
+    margin-right: 65px
+}
+
+header nav ul li .fun-facts {
+    margin-right: -65px;
+}
+
+header nav ul li a {
+    font-size: 20px;
+    font-weight: 620;
+    text-decoration: none;
+    color: var(--font-color-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+header nav ul li:hover a { /* to force color and text changes through cursor hover */
+    color: var(--font-color-primary);
+    text-decoration: underline;
+}
+
+main {
+    padding: 45px 50px 30px 50px;
+    margin-top: 5px;
+    background: var(--bg-secondary);
+    color: var(--font-color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .intro-section {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .intro-section .about-me {
+    font-size: 25px;
+    color: var(--font-color-secondary);
+    text-decoration: underline;
+}
+
+main .intro-section .para {
+    margin-top: 40px;
+    font-size: 18px;
+    align-self: flex-start;
+}
+
+main .intro-section :nth-child(3) {
+    margin-top: 15px;
+}
+
+main .intro-section .para a {
+    color: var(--backup-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+main .intro-section .para a:hover { /* to force color and text changes through cursor hover */
+    color: var(--font-color-primary);
+    text-decoration: underline;
+}
+
+main .intro-section .progress-bar {
+    margin-top: 40px;
+}
+
+main .intro-section .progress-bar span {
+    font-size: 18px;
+}
+
+main .picture-quote-section {
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .picture-quote-section img {
+    width: 350px;
+    height: 450px;
+}
+
+main .picture-quote-section p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--font-color-primary);
+    padding-top: 15px;
+}
+
+footer {
+    margin-top: 5px;
+    padding-bottom: 20px;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    size: relative;
+}
+
+footer ul li {
+    background: var(--bg-secondary);
+    size: absolute;
+    padding: 15px 30px;
+    border-radius: 15px; /* to curve the edges of a box */
+}
+
+footer ul li a {
+    font-size: 20px;
+    font-weight: 620;
+    color: var(--font-color-secondary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer ul li:hover a {
+    color: var(--font-color-primary);
+    text-decoration: underline;
+}

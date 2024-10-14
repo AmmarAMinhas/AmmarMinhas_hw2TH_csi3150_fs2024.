@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    /* suppress browser defaults and select alt box model */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif, Tahoma;
+    /* set variables for colors */
+    --bg-primary: #D1AEA4;
+    --bg-secondary: #E9D8C5; 
+    --font-color-primary: #121F16;
+    --font-color-secondary: #92140C;
+    --backup-color: #9F4A54;
+}
+
+body {
+    height: 100vh;  /*this means span the entire height of screen*/
+    background: var(--bg-primary);
+}
+
+header {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* this means that items will not wrap to next line if window is minimized */
+}
+
+header .page-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 50px;
+}
+
+header .page-title img {
+    width: 65px;
+    height: 65px;
+}
+
+header .page-title .title-background {
+    size: relative;
+    border-radius: 15px; /* to curve the edges of a box */
+    background: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 15px;
+}
+
+header .page-title .title-background h1 {
+    padding: 11px 30px;
+    size: absolute;
+    color: var(--font-color-primary);
+    font-size: 30px;
+    font-weight: 650;
+}
+
+header nav {
+    size: relative;
+    margin-right: 15px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-secondary);
+    margin-right: 30px;
+    size: absolute;
+    padding: 18px 31px;
+    border-radius: 15px; /* to curve the edges of a box */
+}
+
+
+header nav ul li {
+    display: flex;
+    align-items: center;
+    margin-right: 65px
+}
+
+header nav ul li .fun-facts {
+    margin-right: -65px;
+}
+
+header nav ul li a {
+    font-size: 20px;
+    font-weight: 620;
+    text-decoration: none;
+    color: var(--font-color-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header nav ul li:hover a { /* to force color and text changes through cursor hover */
+    color: var(--font-color-primary);
+    text-decoration: underline;
+}
+
+main {
+    padding: 50px 50px 30px 50px;
+    margin-top: 15px;
+    background: var(--bg-secondary);
+    color: var(--font-color-primary);
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+main > h2 {
+    align-self: center;
+    color: var(--font-color-secondary);
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.sections {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+.sections .book-section, .sections-col-2 {
+    flex: 1;
+    padding: 0px 45px;
+}
+
+.sections .title {
+    font-weight: 600;
+    color: var(--backup-color);
+    text-decoration: underline;
+}
+
+.sections .para {
+    margin-top: 15px;
+}
+
+.sections .para a {
+    color: var(--font-color-secondary);
+    font-weight: 680;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.sections .para a:hover { /* to force color and text changes through cursor hover */
+    color: var(--font-color-primary);
+    text-decoration: underline;
+}
+
+.sections .para span{
+    font-weight: 750;
+}
+
+.sections img {
+    display: block;
+    width: 69%;
+    margin: 10px auto 0px auto;
+}
+
+.sections audio {
+    margin: 10px 0px 15px 0px;
+    width: 50%;
+}
+
+.sections iframe {
+    display: block;
+    width: 100%;
+    margin: 10px auto 0px auto;
+}
+
