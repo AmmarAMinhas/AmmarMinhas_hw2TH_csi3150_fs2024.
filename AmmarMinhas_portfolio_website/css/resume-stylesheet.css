@@ -46,7 +46,6 @@ header .heading .page-title img {
 }
 
 header .heading .page-title .title-background {
-    size: relative;
     border-radius: 15px; /* to curve the edges of a box */
     background: var(--bg-secondary);
     display: flex;
@@ -57,14 +56,12 @@ header .heading .page-title .title-background {
 
 header .heading .page-title .title-background h1 {
     padding: 11px 30px;
-    size: absolute;
     color: var(--font-color-primary);
     font-size: 30px;
     font-weight: 650;
 }
 
 header .heading nav {
-    size: relative;
     margin-right: 15px;
 }
 
@@ -74,7 +71,6 @@ header .heading nav ul {
     justify-content: space-between;
     background: var(--bg-secondary);
     margin-right: 30px;
-    size: absolute;
     padding: 18px 31px;
     border-radius: 15px; /* to curve the edges of a box */
 }
@@ -211,7 +207,6 @@ footer {
 }
 
 footer div {
-    size: relative;
     background: var(--bg-secondary);
     border-radius: 15px; /* to curve the edges of a box */
 }
@@ -227,7 +222,6 @@ footer ul {
     justify-content: space-evenly;
     gap: 40%;
     list-style: none;
-    size: relative;
 }
 
 footer ul li {
